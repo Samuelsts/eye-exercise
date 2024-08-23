@@ -1,0 +1,62 @@
+*{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.olhos-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(to right, #f7ca39, #fda31b, #fa3f05);
+    background-size: 400% 400%;
+    animation: colorChange 10s ease-in-out infinite;
+    
+}
+
+@keyframes colorChange {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.olhos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 400px;
+    height: 200px;
+}
+
+.olho{
+    width: 200px;
+    height: 200px;
+    transform-origin:center center ;
+}
+
+.mouth-container {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    background-color: aqua;
+}
+
+.mouth {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 0 0 50px 50px;
+    box-sizing: border-box;
+}
